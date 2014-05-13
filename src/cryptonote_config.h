@@ -8,7 +8,7 @@
 #define CRYPTONOTE_MAX_BLOCK_SIZE                       500000000  // block header blob limit, never used!
 #define CRYPTONOTE_MAX_TX_SIZE                          1000000000
 #define CRYPTONOTE_PUBLIC_ADDRESS_TEXTBLOB_VER          0
-#define CRYPTONOTE_PUBLIC_ADDRESS_BASE58_PREFIX         6 // addresses start with "2"
+#define CRYPTONOTE_PUBLIC_ADDRESS_BASE58_PREFIX         0x6f
 #define CRYPTONOTE_MINED_MONEY_UNLOCK_WINDOW            10
 #define CURRENT_TRANSACTION_VERSION                     1
 #define CURRENT_BLOCK_MAJOR_VERSION                     1
@@ -51,8 +51,8 @@
 #define CRYPTONOTE_PROTOCOL_HOP_RELAX_COUNT             3      //value of hop, after which we use only announce of new block
 
 
-#define P2P_DEFAULT_PORT                                8080
-#define RPC_DEFAULT_PORT                                8081
+#define P2P_DEFAULT_PORT                                46080
+#define RPC_DEFAULT_PORT                                46081
 #define COMMAND_RPC_GET_BLOCKS_FAST_MAX_COUNT           1000
 
 #define P2P_LOCAL_WHITE_PEERLIST_LIMIT                  1000
@@ -66,12 +66,12 @@
 #define P2P_DEFAULT_PING_CONNECTION_TIMEOUT             2000       //2 seconds
 #define P2P_DEFAULT_INVOKE_TIMEOUT                      60*2*1000  //2 minutes
 #define P2P_DEFAULT_HANDSHAKE_INVOKE_TIMEOUT            5000       //5 seconds
-#define P2P_STAT_TRUSTED_PUB_KEY                        "8f80f9a5a434a9f1510d13336228debfee9c918ce505efe225d8c94d045fa115"
+#define P2P_STAT_TRUSTED_PUB_KEY                        "b9b33d91df260babcb2738a2616c3001acedfee81ab236525a723b4369d8d866"
 #define P2P_DEFAULT_WHITELIST_CONNECTIONS_PERCENT       70
 
 #define ALLOW_DEBUG_COMMANDS
 
-#define CRYPTONOTE_NAME                         "bytecoin"
+#define CRYPTONOTE_NAME                         "testnotecoin"
 #define CRYPTONOTE_POOLDATA_FILENAME            "poolstate.bin"
 #define CRYPTONOTE_BLOCKCHAINDATA_FILENAME      "blockchain.bin"
 #define CRYPTONOTE_BLOCKCHAINDATA_TEMP_FILENAME "blockchain.bin.tmp"
